@@ -15,9 +15,9 @@ AFRAME.registerComponent("markerhandler", {
         this.target.setAttribute('rotation', this.el.getAttribute('rotation'))
       } else {
         // use the previous values to get an approximation 
-        this.target.object3D.position.lerp(this.prevPosition, 0.01)
+        this.target.object3D.position.lerp(this.prevPosition, 0.001)
 
-        let rot = this.target.object3D.rotation.toVector3().lerp(this.prevRotation, 0.01)
+        let rot = this.target.object3D.rotation.toVector3().lerp(this.prevRotation, 0.001)
         this.target.object3D.rotation.setFromVector3(rot)
       }
       // update the values
