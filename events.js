@@ -29,6 +29,7 @@ AFRAME.registerComponent('markerhandler', {
             }
             else if (aEntity3 && intersectedElement === aEntity3) {
                 window.open("https://www.linkedin.com/in/aidan-rubenstein-58a00b134/");
+                alert("Hi");
                 console.log("Success.");
             }
 
