@@ -20,15 +20,15 @@ AFRAME.registerComponent('markerhandler', {
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
 
             if (aEntity && intersectedElement === aEntity) {
-                window.open("https://www.github.com/ar2126");
+                window.open("http://hackbayernfeedback.pythonanywhere.com/");
                 console.log("Success.");
             }
             else if (aEntity2 && intersectedElement === aEntity2) {
-                window.open("https://twitter.com/WoolybearTV");
+                window.open("http://hackbayernauth.pythonanywhere.com/");
                 console.log("Success.");
             }
             else if (aEntity3 && intersectedElement === aEntity3) {
-                window.open("https://www.linkedin.com/in/aidan-rubenstein-58a00b134/");
+                window.open("https://de.linkedin.com/company/bayer?trk=similar-pages");
                 alert("Hi");
                 console.log("Success.");
             }
